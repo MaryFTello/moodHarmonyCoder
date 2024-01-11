@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <nav>
+        <!--lista no ordenada con el menu-->
+        <ul>
+          <li><a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo-principal" /></li></a>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="ofertas.html">Ofertas</a>
+          </li>
+          <li>
+            <a href="galeria.html">Galeria</a>
+          </li>
+          <li>
+            <a href="pedidos-esp.html">Pedidos especiales</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="busqueda">
+        <div class="box-search">
+          <p>Busca tu aroma favorito</p>
+        </div>
+      </section>
+    </header>
+    <!--Seccion principal-->
+    <main>
+      <h1>Contacto</h1>
+      <p>Dejanos tu contacto y te contectaremos a la brevedad</p>
+
+      <form>
+        <fieldset>
+          <legend>Completa los datos de contacto</legend>
+          <div>
+            <label for="nombre-apellido">Nombre y Appellido:</label>
+            <input
+              id="nombre-apellido"
+              type="text"
+              placeholder="Ingresa tu nombre completo"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Correo Electronico</label>
+            <input id="email" type="email" placeholder="Ingresa tu email" />
+          </div>
+
+          <div>
+            <label for="telefono">Telefono</label>
+            <input id="telefono" type="tel" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de dirección</legend>
+          <div class="campos">
+            <label for="direccion">Dirección completa</label>
+            <input id="direccion" type="text" />
+          </div>
+          <div class="campos">
+            <label for="cod-postal">Código Postal</label>
+            <input id="cod-postal" type="number" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Indique su genero</legend>
+          <div class="campos">
+            <label for="masculino">Masculinoo</label>
+            <input id="radio" type="radio" name="genero" />
+
+            <label for="femenino">Femenino</label>
+            <input id="radio" type="radio" name="genero" />
+
+            <label for="nobin">No Binario</label>
+
+            <input id="radio" type="radio" name="genero" />
+          </div>
+        </fieldset>
+        <!--
+        <div>
+          <label for="opciones">Selecione una opcion</label>
+          <select name="" id="opciones">
+            <option value="">Talle S</option>
+            <option value="">Talle M</option>
+            <option value="">Talle L</option>
+          </select>
+        </div>
+        -->
+        <div class="campos">
+          <label for="mensaje">Dejanos tu mensaje</label>
+          <textarea
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Tu mensaje debe tener menos de 100 caracteres"
+          ></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Enviar Formulario" />
+          <input type="reset" value="Borrar el Formulario" />
+        </div>
+      </form>
+    </main>
+    
+    <h1>Ubicación</h1>
+    <p>Puedes encontrarnos en Mar del Plata</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12581.731871058717!2d-57.564601100000004!3d-37.9670239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d97c7e410e7b%3A0xb7bea621d858b9cb!2sAntares%20Cervecer%C3%ADa%20-%20Constituci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1701568021110!5m2!1ses-419!2sar"
+      width="800"
+      height="600"
+      style="border: 0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <footer>
+      <div>
+        <p>MEDIOS DE PAGO</p>
+        <img src="../img/visa@2x.png" alt="">
+        <img src="../img/mastercard@2x.png" alt="">
+        <img src="../img/mercadopago@2x.png" alt="">
+        <img src="../img/cuenta-dni.jpg" alt="">
+      </div>
+
+      <div>
+        <h2>
+          Otros Medios de contacto
+        </h2>
+        <!--redes sociales-->
+        <a href="">Instagram</a>
+        <a href="">Tik Tock</a>
+        <a href="">X</a>
+      </div>
+    </footer>
+  </body>
+</html>
