@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mood Harmony</title>
-    <!--CSS-->
-
     <!--Bootstrap antes que Css por logica de cascada-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>   
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <!--favicon-->
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
@@ -17,67 +24,274 @@
   <body>
     <!--header-->
     <header>
-      <nav>
+      <nav class="menu">
         <!--lista no ordenada con el menu-->
-        <ul>
-          <li><a href="index.html"><img src="img/Mood Harmony (1).svg" alt="Logo" class="logo-principal" /></li></a>
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="pages/ofertas.html">Ofertas</a>
-          </li>
-          <li>
-            <a href="pages/galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a href="pages/pedidos-esp.html">Pedidos especiales</a>
-          </li>
-          <li>
-            <a href="pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
+        <div>
+          <a href="index.html"
+            ><img
+              src="img/Mood Harmony (1).svg"
+              alt="Logo"
+              class="logo-principal"
+          /></a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="pages/ofertas.html">Ofertas</a>
+            </li>
+            <li>
+              <a href="pages/galeria.html">Galeria</a>
+            </li>
+            <li>
+              <a href="pages/pedidos-esp.html">Pedidos especiales</a>
+            </li>
+            <li>
+              <a href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="menu-hamb navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html"
+            ><img
+              src="img/Mood Harmony (1).svg"
+              alt="Logo"
+              class="logo-principal"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/pedidos-esp.html">Pedidos especiales</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <section class="busqueda">
-        <div class="box-search">
-          <p>Busca tu aroma favorito</p>
-        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="box-search form-control me-2"
+            type="search"
+            placeholder="Busca tu aroma favorito"
+            aria-label="Search"
+          />
+        </form>
       </section>
     </header>
 
-    <main id="carrusel-prin">
-      <section class="carrusel">
-        <img src="img/sahumerios-ramo.jpg" alt="" />
-        <p class="sub-title-carrusel">¿POR QUÉ ELEGIRNOS?</p>
-      </section>
-      <section class="carrusel">
-        <img src="img/7bccd5e8-a2ed-463d-a8e1-b5c848f76bf4.jpg" alt="" />
-        <p class="sub-title-carrusel">NUESTROS AROMAS</p>
-      </section>
-    </main>
+    <div class="container-md">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner carrusel">
+          <div class="carousel-item active">
+            <img
+              src="img/sahumerios-ramo.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por que elegirnos?</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/7bccd5e8-a2ed-463d-a8e1-b5c848f76bf4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por su duravilidad</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/sahumerios-ramo.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por la gran variedad de aromas</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-md">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner carrusel">
+          <div class="carousel-item active">
+            <img
+              src="img/sahumerios-ramo.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por que elegirnos?</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/7bccd5e8-a2ed-463d-a8e1-b5c848f76bf4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por su duravilidad</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/sahumerios-ramo.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Por la gran variedad de aromas</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
     <footer>
-      <div>
-        <p>MEDIOS DE PAGO</p>
-        <img src="img/visa@2x.png" alt="">
-        <img src="img/mastercard@2x.png" alt="">
-        <img src="img/mercadopago@2x.png" alt="">
-        <img src="img/cuenta-dni.jpg" alt="">
-      </div>
+      <section class="footer-content">
+        <div class="icons-tarj">
+          <p>MEDIOS DE PAGO</p>
+          <img src="img/visa@2x.png" alt="" />
+          <img src="img/mastercard@2x.png" alt="" />
+          <img src="img/mercadopago@2x.png" alt="" />
+          <img src="img/cuenta-dni.jpg" alt="" />
+        </div>
 
-      <div>
-      
-        <!--redes sociales-->
-        <img src="/img/instagram.jpg" alt="">
-        <img src="/img/intagram1.jpg" alt="">
-        <a href="">Instagram</a>
-        <a href="">Tik Tock</a>
-        <a href="">X</a>
-      </div>
+        <div class="second-secction">
+          <div class="icons-redes">
+            <!--redes sociales-->
+            <a href=""
+              ><img src="/img/instagram.jpg" alt="" />@moodharmony_mdp</a
+            >
+            <a href=""
+              ><img src="/img/intagram1.jpg" alt="" />+54 9 2233404253</a
+            >
+          </div>
 
-      <div>
-        <img src="img/Mood Harmony (1).svg" alt="Logo" class="logo-principal" />
-      </div>
+          <div>
+            <a href="index.html"
+              ><img
+                src="img/Mood Harmony (1).svg"
+                alt="Logo"
+                class="logo-principal"
+            /></a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

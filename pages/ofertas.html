@@ -4,101 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ofertas</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!--Botstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
     <!--favicon-->
     <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon" />
   </head>
   <body>
     <!--header-->
     <header>
-      <nav>
+      <nav class="menu">
         <!--lista no ordenada con el menu-->
-        <ul>
-          <li><a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo-principal" /></li></a>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="ofertas.html">Ofertas</a>
-          </li>
-          <li>
-            <a href="galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a href="pedidos-esp.html">Pedidos especiales</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+        <div>
+          <a href="../index.html"
+            ><img
+              src="../img/Mood Harmony (1).svg"
+              alt="Logo"
+              class="logo-principal"
+          /></a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="../pages/ofertas.html">Ofertas</a>
+            </li>
+            <li>
+              <a href="../pages/galeria.html">Galeria</a>
+            </li>
+            <li>
+              <a href="../pages/pedidos-esp.html">Pedidos especiales</a>
+            </li>
+            <li>
+              <a href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="menu-hamb navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html"
+            ><img
+              src="../img/Mood Harmony (1).svg"
+              alt="Logo"
+              class="logo-principal"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/ofertas.html">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/pedidos-esp.html">Pedidos especiales</a>
+              </li>
+              <li class="nav-item">
+                <a href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <section class="busqueda">
-        <div class="box-search">
-          <p>Busca tu aroma favorito</p>
-        </div>
+        <form class="d-flex" role="search">
+          <input
+            class="box-search form-control me-2"
+            type="search"
+            placeholder="Busca tu aroma favorito"
+            aria-label="Search"
+          />
+        </form>
       </section>
     </header>
 
     <main>
       <section id="cards-off">
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-      <div>
-        <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="">
-        <p>Precio: $600</p>
-        <p>Paquete de sahumerios, mix de aromas</p>
-        <p class="oferta">20% de descuento</p>
-      </div>
-    </section>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+        <div>
+          <img src="../img/a05620e9-8404-4557-8b93-1c6173663c9e.jpg" alt="" />
+          <p>Precio: $600</p>
+          <p>Paquete de sahumerios, mix de aromas</p>
+          <p class="oferta">20% OFF</p>
+        </div>
+      </section>
     </main>
-    
 
     <footer>
-      <div>
-        <p>MEDIOS DE PAGO</p>
-        <img src="../img/visa@2x.png" alt="">
-        <img src="../img/mastercard@2x.png" alt="">
-        <img src="../img/mercadopago@2x.png" alt="">
-        <img src="../img/cuenta-dni.jpg" alt="">
-      </div>
+      <section class="footer-content">
+        <div class="icons-tarj">
+          <p>MEDIOS DE PAGO</p>
+          <img src="../img/visa@2x.png" alt="" />
+          <img src="../img/mastercard@2x.png" alt="" />
+          <img src="../img/mercadopago@2x.png" alt="" />
+          <img src="../img/cuenta-dni.jpg" alt="" />
+        </div>
 
-      <div>
-        <h2>
-          Otros Medios de contacto
-        </h2>
-        <!--redes sociales-->
-        <a href="">Instagram</a>
-        <a href="">Tik Tock</a>
-        <a href="">X</a>
-      </div>
+        <div class="second-secction">
+          <div class="icons-redes">
+            <!--redes sociales-->
+            <a href=""
+              ><img src="../img/instagram.jpg" alt="" />@moodharmony_mdp</a
+            >
+            <a href=""
+              ><img src="../img/intagram1.jpg" alt="" />+54 9 2233404253</a
+            >
+          </div>
+
+          <div>
+            <a href="../index.html"
+              ><img
+                src="../img/Mood Harmony (1).svg"
+                alt="Logo"
+                class="logo-principal"
+            /></a>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
