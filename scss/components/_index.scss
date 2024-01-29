@@ -1,0 +1,27 @@
+/*----------INDEX-----------*/
+
+/*Carrusel*/
+#carrusel-prin {
+  display: grid;
+  grid-template-rows: repeat(2, 400px);
+  justify-content: center;
+}
+.carrusel {
+  position: relative;
+  img {
+    width: 520px;
+    height: 390px;
+    margin: 25px 2px;
+  }
+}
+
+.sub-title-carrusel {
+  position: absolute;
+  bottom: 100px;
+  left: 215px;
+  text-decoration: underline;
+  color: white;
+  p {
+    font-family: "Catchy Mager Regular";
+  }
+}

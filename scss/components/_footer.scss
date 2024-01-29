@@ -1,0 +1,30 @@
+/*--------FOOTER-------*/
+
+footer {
+  background-image: url(/img/fondo-nube-rosa-LL.jpeg);
+  background-size: cover;
+  height: 160px;
+  padding: 30px;
+}
+.icons-tarj img {
+  width: 40px;
+  height: 32px;
+}
+.icons-redes {
+  display: inline-grid;
+  gap: 20px;
+  img {
+    width: 40px;
+    height: 32px;
+  }
+}
+.second-secction {
+  display: flex;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  div p {
+    font-family: "Catchy Mager Regular";
+  }
+}
