@@ -106,99 +106,79 @@
         </form>
       </section>
     </header>
+
     <!--Seccion principal-->
-    <main>
-      <h1>Contacto</h1>
-      <p>Dejanos tu contacto y te contectaremos a la brevedad</p>
-
-      <form>
-        <fieldset>
-          <legend>Completa los datos de contacto</legend>
-          <div>
-            <label for="nombre-apellido">Nombre y Appellido:</label>
-            <input
-              id="nombre-apellido"
-              type="text"
-              placeholder="Ingresa tu nombre completo"
-              required
-            />
+    <main class="container">
+      <section class="row justify-content-md-center my-5">
+        <div class="col-md-4">
+          <h1>Contacto</h1>
+          <div class="icons-redes">
+            <!--redes sociales-->
+            <a href=""
+              ><img src="../img/instagram.jpg" alt="" />@moodharmony_mdp</a
+            >
+            <a href=""
+              ><img src="../img/intagram1.jpg" alt="" />+54 9 2233404253</a
+            >
+            <a href=""
+              ><img src="../img/intagram1.jpg" alt="" />Av. Dr. Arturo Alio 131
+              Mar del Plata Buenos Aires AR, López de Gomara 131, B7604</a
+            >
           </div>
-
-          <div>
-            <label for="email">Correo Electronico</label>
-            <input id="email" type="email" placeholder="Ingresa tu email" />
+          <div class="row justify-content-md-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.6328568478307!2d-57.58775382381837!3d-37.962357742545535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9a7a48a9419%3A0x460ac6da62648668!2sFraser%20Motos!5e0!3m2!1ses!2sar!4v1706578945214!5m2!1ses!2sar"
+              width="400"
+              height="300"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-
-          <div>
-            <label for="telefono">Telefono</label>
-            <input id="telefono" type="tel" />
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Datos de dirección</legend>
-          <div class="campos">
-            <label for="direccion">Dirección completa</label>
-            <input id="direccion" type="text" />
-          </div>
-          <div class="campos">
-            <label for="cod-postal">Código Postal</label>
-            <input id="cod-postal" type="number" />
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Indique su genero</legend>
-          <div class="campos">
-            <label for="masculino">Masculinoo</label>
-            <input id="radio" type="radio" name="genero" />
-
-            <label for="femenino">Femenino</label>
-            <input id="radio" type="radio" name="genero" />
-
-            <label for="nobin">No Binario</label>
-
-            <input id="radio" type="radio" name="genero" />
-          </div>
-        </fieldset>
-        <!--
-        <div>
-          <label for="opciones">Selecione una opcion</label>
-          <select name="" id="opciones">
-            <option value="">Talle S</option>
-            <option value="">Talle M</option>
-            <option value="">Talle L</option>
-          </select>
-        </div>
-        -->
-        <div class="campos">
-          <label for="mensaje">Dejanos tu mensaje</label>
-          <textarea
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Tu mensaje debe tener menos de 100 caracteres"
-          ></textarea>
         </div>
 
-        <div>
-          <input type="submit" value="Enviar Formulario" />
-          <input type="reset" value="Borrar el Formulario" />
+        <div class="col-md-8">
+          <form>
+            <div class="form-group">
+              <h1>Completa con tus datos</h1>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" class="form-control" type="text" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Correo Electronico</label>
+              <input id="email" class="form-control" type="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefono">Telefono</label>
+              <input id="telefono" class="form-control" type="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Mensaje</label>
+              <textarea
+                id=""
+                class="form-control form-control-area"
+                cols="30"
+                rows="10"
+                placeholder="Dejanos tu mensaje"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                class="btn btn-primary btn-block"
+                type="submit"
+                value="Enviar"
+                name="contact"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+      </section>
     </main>
-    
-    <h1>Ubicación</h1>
-    <p>Puedes encontrarnos en Mar del Plata</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12581.731871058717!2d-57.564601100000004!3d-37.9670239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d97c7e410e7b%3A0xb7bea621d858b9cb!2sAntares%20Cervecer%C3%ADa%20-%20Constituci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1701568021110!5m2!1ses-419!2sar"
-      width="800"
-      height="600"
-      style="border: 0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+
+    <section class="container"></section>
 
     <footer>
       <section class="footer-content">

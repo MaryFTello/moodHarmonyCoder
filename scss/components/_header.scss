@@ -16,9 +16,7 @@ a {
   font-family: $fuente;
 }
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @extend %flex-center-around;
   text-transform: uppercase;
 }
 nav ul {
@@ -35,16 +33,14 @@ nav ul {
 .busqueda {
   background-color: $fondo-color;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-around;
   div p {
     padding: 6px;
   }
 }
 .box-search {
   width: 250px;
-  background-color: rgb(248, 212, 233);
+  background-color: $fondo-color-claro;
   border-radius: 9px;
   text-align: center;
   height: 35px;
@@ -57,7 +53,7 @@ nav ul {
   }
 }
 .navbar-toggler:hover {
-  color: #f6d6ea;
+  color: map-get($colores, fondo-color-claro );
 }
 ul.navbar-nav {
   align-items: end;

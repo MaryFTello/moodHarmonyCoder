@@ -1,13 +1,29 @@
 /*--------CONTACTO--------*/
-
-fieldset {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+.form-group input {
+  border: 1px solid $fondo-color;
 }
-.campos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+.form-group textarea {
+  border: 1px solid $fondo-color;
+}
+.btn-primary {
+  padding: 13px;
+  background-color: $fondo-color;
+  color: #f6fdfd;
+  fill: #f6fdfd;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 40px;
+  border-color: none;
+}
+.btn-block {
+  float: left;
+  width: 100%;
+}
+.btn {
+  margin-top: 3%;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: $fondo-color-claro;
+  }
 }

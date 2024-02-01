@@ -1,0 +1,9 @@
+@for $i from 1 through 12 {
+  #galeria{
+    div{
+      &:nth-child(#{$i}) {
+        background-image: url('../../img/#{$i}.jpg');
+      }
+    }
+  }
+}

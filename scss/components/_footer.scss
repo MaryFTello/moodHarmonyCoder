@@ -1,7 +1,7 @@
 /*--------FOOTER-------*/
 
 footer {
-  background-image: url(/img/fondo-nube-rosa-LL.jpeg);
+  background-image: $fondo-nube;
   background-size: cover;
   height: 160px;
   padding: 30px;
@@ -20,11 +20,17 @@ footer {
 }
 .second-secction {
   display: flex;
+  gap: 1em;
 }
 .footer-content {
   display: flex;
   justify-content: space-around;
   div p {
-    font-family: "Catchy Mager Regular";
+    font-family: $fuente;
+  }
+}
+@media (min-width: 680px) {
+  div p {
+    font-size: large;
   }
 }
