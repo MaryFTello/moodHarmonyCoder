@@ -16,7 +16,7 @@
 @media (max-width: 680px) {
   #cards-off {
     grid-template-columns: repeat(1, 350px);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto;
   }
 }
 #cards-off div {

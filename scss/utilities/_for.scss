@@ -2,7 +2,7 @@
   #galeria{
     div{
       &:nth-child(#{$i}) {
-        background-image: url('../../img/#{$i}.jpg');
+        background-image: url('../img/#{$i}.jpg');
       }
     }
   }
