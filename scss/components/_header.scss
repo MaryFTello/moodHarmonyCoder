@@ -30,21 +30,21 @@ nav ul {
 .logo-principal {
   width: 120px;
 }
-.busqueda {
+.box-search {
   background-color: $fondo-color;
   height: 80px;
-  @extend %flex-center-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   div p {
     padding: 6px;
   }
 }
-.box-search {
-  width: 250px;
+.busqueda {
+  width: 350px;
   background-color: $fondo-color-claro;
-  border-radius: 9px;
   text-align: center;
-  height: 35px;
-  margin: 5px;
+  border-radius: 8px;
 }
 
 @media (max-width: 680px) {

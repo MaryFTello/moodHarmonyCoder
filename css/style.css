@@ -10,7 +10,7 @@
   font-family: "Catchy Mager Regular";
   src: url(../fonts/CatchyMagerRegular.ttf);
 }
-.busqueda, nav {
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -100,21 +100,22 @@ nav ul li {
   width: 120px;
 }
 
-.busqueda {
+.box-search {
   background-color: rgb(250, 188, 224);
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.busqueda div p {
+.box-search div p {
   padding: 6px;
 }
 
-.box-search {
-  width: 250px;
+.busqueda {
+  width: 350px;
   background-color: rgb(248, 212, 233);
-  border-radius: 9px;
   text-align: center;
-  height: 35px;
-  margin: 5px;
+  border-radius: 8px;
 }
 
 @media (max-width: 680px) {
@@ -211,7 +212,6 @@ footer {
 }
 .carrusel img {
   width: 520px;
-  height: 390px;
   margin: 25px 2px;
 }
 
@@ -345,7 +345,6 @@ h1 {
 }
 
 .btn {
-  margin-top: 3%;
   border: 0;
   cursor: pointer;
 }
