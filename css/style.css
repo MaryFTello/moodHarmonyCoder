@@ -66,7 +66,7 @@
 
 /*---------MENÚ--------*/
 header {
-  background-image: url(/img/fondo-nube-rosa-LL.jpeg);
+  background-image: url(../../img/fondo-nube-rosa-LL.jpeg);
   background-size: cover;
 }
 
@@ -137,13 +137,14 @@ ul.navbar-nav {
 }
 /*--------FOOTER-------*/
 footer {
-  background-image: url(/img/fondo-nube-rosa-LL.jpeg);
+  background-image: url(../../img/fondo-nube-rosa-LL.jpeg);
   background-size: cover;
   height: 160px;
   padding: 30px;
 }
 
 .icons-tarj img {
+  align-items: center;
   width: 40px;
   height: 32px;
 }
@@ -152,14 +153,35 @@ footer {
   display: inline-grid;
   gap: 20px;
 }
-.icons-redes img {
+
+@media (max-width: 730px) {
+  .icons-redes {
+    display: none;
+  }
+  .icons-redes-mobile {
+    display: inline-grid;
+    gap: 20px;
+  }
+}
+.icon-r {
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+  color: rgb(250, 188, 224);
+  margin-right: 5px;
   width: 40px;
   height: 32px;
 }
 
+@media (min-width: 730px) {
+  .icons-redes-mobile {
+    display: none;
+  }
+}
 .second-secction {
   display: flex;
   gap: 1em;
+  align-items: center;
 }
 
 .footer-content {
@@ -168,11 +190,12 @@ footer {
 }
 .footer-content div p {
   font-family: "Catchy Mager Regular";
+  font-size: 25px;
 }
 
-@media (min-width: 680px) {
-  div p {
-    font-size: large;
+@media (max-width: 680px) {
+  .icons-tarj div p {
+    font-size: 20px;
   }
 }
 /*----------INDEX-----------*/
