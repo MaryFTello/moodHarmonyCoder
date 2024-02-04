@@ -1,4 +1,12 @@
 /*--------CONTACTO--------*/
+.icons-redes-contacto{
+  display: inline-grid;
+  gap: 20px;
+}
+h1{
+  color: white;
+  text-shadow: rgb(217, 120, 209) 1px 0 10px;
+}
 .form-group input {
   border: 1px solid $fondo-color;
 }
