@@ -15,8 +15,8 @@ footer {
   display: inline-grid;
   gap: 20px;
 }
-@media(max-width:730px){
-  .icons-redes{
+@media (max-width: 730px) {
+  .icons-redes {
     display: none;
   }
   .icons-redes-mobile {
@@ -24,7 +24,8 @@ footer {
     gap: 20px;
   }
 }
-.icon-r{
+
+.icon-r {
   background-color: white;
   padding: 5px;
   border-radius: 100px;
@@ -33,9 +34,9 @@ footer {
   width: 40px;
   height: 32px;
 }
-@media(min-width:730px) {
+@media (min-width: 500px) {
   .icons-redes-mobile {
-    display: none;
+    display: flex;
   }
 }
 
@@ -49,11 +50,18 @@ footer {
   justify-content: space-around;
   div p {
     font-family: $fuente;
-    font-size: 25px
+    font-size: 25px;
   }
 }
 @media (max-width: 680px) {
-  .icons-tarj div p{
-    font-size:20px;
+  .icons-tarj div p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .redes-mobile {
+    margin-top: 1rem;
+    display: none;
   }
 }
